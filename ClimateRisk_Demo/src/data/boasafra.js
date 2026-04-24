@@ -1,0 +1,195 @@
+export const BOA_SAFRA = {
+  name: 'Boa Safra Sementes S.A.',
+  ticker: 'SOJA3',
+  sector: 'Agronegócio — Sementes',
+  initials: 'BS',
+  rating: 'C',
+  ratingLabel: 'Moderado-Alto',
+  trend: 'Piorando',
+  trendDir: 'down',
+  trendPeriod: 'últimos 6 meses',
+  mainRisk: 'Irreg. Hídrica',
+  riskRegion: 'Centro-Oeste',
+  horizon: 'Curto/Médio',
+  horizonPeriod: '3–12 meses',
+  criticalRegions: ['MT', 'GO', 'MS', 'BA', 'PI'],
+  lastUpdate: '15 Abr 2025 · 18:30',
+
+  alerts: [
+    {
+      id: 'a1',
+      severity: 'high',
+      horizon: 'Curto Prazo',
+      title: 'Irregularidade de chuvas no Centro-Oeste',
+      description:
+        'Previsão de irregularidade de chuvas no Centro-Oeste pode comprimir janela de plantio e reduzir demanda por sementes nas próximas semanas.',
+    },
+    {
+      id: 'a2',
+      severity: 'medium',
+      horizon: 'Médio Prazo',
+      title: 'La Niña eleva risco no MATOPIBA',
+      description:
+        'Condições de La Niña aumentam probabilidade de seca no MATOPIBA, elevando risco de revisão de guidance e pressão em capital de giro.',
+    },
+    {
+      id: 'a3',
+      severity: 'info',
+      horizon: 'Longo Prazo',
+      title: 'Estresse hídrico estrutural crescente',
+      description:
+        'Cenários de aumento de temperatura e estresse hídrico estrutural elevam risco de quebra de safra recorrente nas regiões-core da empresa.',
+    },
+  ],
+
+  corporateNews: [
+    {
+      id: 'n1',
+      title: 'Boa Safra revisa projeções de volume para 2025 após irregularidades climáticas',
+      source: 'Valor Econômico',
+      date: '15/04/2025',
+      impact: 'Receita e estoque',
+      impactType: 'negative',
+    },
+    {
+      id: 'n2',
+      title: 'Empresa amplia capacidade de armazenagem no MT como estratégia de mitigação',
+      source: 'AgFeed',
+      date: '10/04/2025',
+      impact: 'Positivo — reduz risco logístico',
+      impactType: 'positive',
+    },
+    {
+      id: 'n3',
+      title: 'Analistas alertam para inadimplência de produtores em ano de seca',
+      source: 'InfoMoney',
+      date: '08/04/2025',
+      impact: 'Capital de giro e provisões',
+      impactType: 'negative',
+    },
+  ],
+
+  climateEvents: [
+    {
+      id: 'c1',
+      event: 'Bloqueio Atmosférico',
+      region: 'Centro-Oeste',
+      severity: 'high',
+      horizon: '15 dias',
+      impact: 'Desvio das ZCAS, atraso de chuvas',
+    },
+    {
+      id: 'c2',
+      event: 'El Niño Fraco',
+      region: 'Sul / Sudeste',
+      severity: 'medium',
+      horizon: '3 meses',
+      impact: 'Excesso de chuva em janela de colheita',
+    },
+    {
+      id: 'c3',
+      event: 'Onda de Calor',
+      region: 'MATOPIBA',
+      severity: 'high',
+      horizon: '7 dias',
+      impact: 'Estresse térmico nas culturas',
+    },
+  ],
+
+  financialImpact: [
+    {
+      id: 'f1',
+      factor: 'Seca Centro-Oeste',
+      metric: 'Receita líquida',
+      impact: '-8% a -15%',
+      impactDir: 'negative',
+      probability: 'Alta',
+      probValue: 0.82,
+      probColor: '#ef4444',
+    },
+    {
+      id: 'f2',
+      factor: 'Irregularidade hídrica',
+      metric: 'Capital de giro',
+      impact: '+12% necessidade',
+      impactDir: 'warning',
+      probability: 'Média',
+      probValue: 0.58,
+      probColor: '#f59e0b',
+    },
+    {
+      id: 'f3',
+      factor: 'Quebra de safra (clientes)',
+      metric: 'Inadimplência',
+      impact: '+3–5 pp',
+      impactDir: 'warning',
+      probability: 'Média',
+      probValue: 0.55,
+      probColor: '#f59e0b',
+    },
+    {
+      id: 'f4',
+      factor: 'Atraso janela de plantio',
+      metric: 'Volume vendido',
+      impact: '-10% a -20%',
+      impactDir: 'negative',
+      probability: 'Alta',
+      probValue: 0.78,
+      probColor: '#ef4444',
+    },
+  ],
+
+  ratingComposition: [
+    {
+      id: 'r1',
+      dimension: 'Exposição Geográfica',
+      evaluation: 'Alta',
+      weight: '30%',
+      weightVal: 30,
+      contribution: 'Eleva risco',
+      contributionDir: 'negative',
+    },
+    {
+      id: 'r2',
+      dimension: 'Severidade Climática',
+      evaluation: 'Média-Alta',
+      weight: '30%',
+      weightVal: 30,
+      contribution: 'Eleva risco',
+      contributionDir: 'negative',
+    },
+    {
+      id: 'r3',
+      dimension: 'Sensibilidade Operacional',
+      evaluation: 'Alta',
+      weight: '25%',
+      weightVal: 25,
+      contribution: 'Eleva risco',
+      contributionDir: 'negative',
+    },
+    {
+      id: 'r4',
+      dimension: 'Capacidade de Adaptação',
+      evaluation: 'Média',
+      weight: '15%',
+      weightVal: 15,
+      contribution: 'Reduz parcialmente',
+      contributionDir: 'positive',
+    },
+  ],
+
+  profile: {
+    summary:
+      'Boa Safra Sementes S.A. é uma das maiores produtoras e distribuidoras de sementes de soja do Brasil, com presença significativa também em milho. Fundada com foco em tecnologia de sementes de alta performance, atua nas regiões Centro-Oeste, MATOPIBA (Maranhão, Tocantins, Piauí e Bahia) e parte do Sudeste.',
+    model:
+      'Seu modelo de negócio conecta diretamente ao ciclo agrícola: volumes, margens e recebíveis dependem da saúde da safra dos produtores rurais clientes. A empresa opera com um sistema de comercialização antecipada (troca de sementes por grãos), o que cria exposição à inadimplência em anos de quebra de safra.',
+    climate:
+      'O risco climático impacta tanto a produção própria quanto a demanda dos clientes — tornando a empresa duplamente exposta a eventos de irregularidade hídrica e estresse térmico nas regiões produtoras.',
+    stats: [
+      { label: 'Ticker', value: 'SOJA3' },
+      { label: 'Mercado', value: 'B3 · Novo Mercado' },
+      { label: 'Rating Climático', value: 'C · Moderado-Alto' },
+      { label: 'Última Revisão', value: 'Abr 2025' },
+    ],
+  },
+};
