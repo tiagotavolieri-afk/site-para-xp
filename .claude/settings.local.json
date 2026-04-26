@@ -9,7 +9,8 @@
       "Bash(curl -s http://localhost:3000)",
       "PowerShell(Stop-Process *)",
       "Bash(node *)",
-      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['version']\\)\")"
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d['version']\\)\")",
+      "PowerShell(Get-ChildItem -Recurse -Path \"C:\\\\Users\\\\KABUM\\\\OneDrive\\\\Documentos\\\\PROGRAMACAO\\\\ProjetosPessoais\\\\ClimateRisk Intelligence\\\\Prototipo_ClimateRisk\\\\Site-para-XP\\\\ClimateRisk_Demo\\\\src\" -Exclude \"node_modules\" | Where-Object { !$_.PSIsContainer } | Select-Object FullName | Format-List)"
     ]
   }
 }
